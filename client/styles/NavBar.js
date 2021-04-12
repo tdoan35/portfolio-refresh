@@ -20,13 +20,8 @@ export default makeStyles((theme) => ({
     cursor: 'pointer',
     '&:hover': {
       backgroundColor: 'gray',
-      border: 0,
       borderRadius: 5
     },
-    '&:active': {
-      border: 1,
-      borderColor: 'white',
-    }
   },
   myName: {
     color: '#00D3FF',
@@ -61,5 +56,8 @@ export default makeStyles((theme) => ({
     width: '32%',
     backgroundColor: '#FFFFFF',
     flexGrow: 1,
+    display: 'flex',
+    alignItems: 'center',
+    paddingLeft: '10vw',
   }
 }));
