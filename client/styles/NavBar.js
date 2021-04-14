@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
   navBar: {
     height: 125,
     width: '68%',
-    backgroundColor: '#707070',
+    backgroundColor: '#4D4D4D',
     display: 'flex',
     justifyContent: 'flex-end',
     alignItems: 'center',
