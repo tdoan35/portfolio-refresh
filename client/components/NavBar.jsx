@@ -7,6 +7,7 @@ import useStyles from '../styles/NavBar';
 const NavBar = () => {
   const classes = useStyles();
 
+  
   return (
     <Box display='flex'>
       <Fade in={true} timeout={1000}>
@@ -28,13 +29,13 @@ const NavBar = () => {
       <Fade in={true} timeout={2000}>
         <Box className={classes.navBarIcons}>
             <IconButton>
-              <LinkedIn fontSize='large'/>
+              <LinkedIn />
             </IconButton>
             <IconButton>
-              <Twitter fontSize='large'/>
+              <Twitter />
             </IconButton>
             <IconButton>
-              <GitHub fontSize='large'/>
+              <GitHub />
             </IconButton>
         </Box>
       </Fade>
