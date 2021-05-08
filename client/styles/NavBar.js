@@ -1,9 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+const navBarHeight = 85;
 
 export default makeStyles((theme) => ({
   navBar: {
-    height: 125,
+    height: navBarHeight,
     width: '68%',
     backgroundColor: '#4D4D4D',
     display: 'flex',
@@ -16,12 +17,15 @@ export default makeStyles((theme) => ({
     }),
     display: 'flex',
     alignItems: 'center',
-    height: 60,
+    height: 40,
     cursor: 'pointer',
     '&:hover': {
       backgroundColor: 'gray',
       borderRadius: 5
     },
+    borderRadius: 5,
+    maxWidth: 150,
+    whiteSpace: 'nowrap',
   },
   myName: {
     color: '#00D3FF',
@@ -52,7 +56,7 @@ export default makeStyles((theme) => ({
     paddingRight: 50,
   },
   navBarIcons: {
-    height: 125,
+    height: navBarHeight,
     width: '32%',
     backgroundColor: '#FFFFFF',
     flexGrow: 1,

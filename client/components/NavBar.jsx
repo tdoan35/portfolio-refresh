@@ -10,23 +10,23 @@ const NavBar = () => {
   
   return (
     <Box display='flex'>
-      <Fade in={true} timeout={1000}>
+      {/* <Fade in={true} timeout={500}> */}
         <Box className={classes.navBar}>
           <ButtonBase focusRipple className={classes.navBtns}>
-            <Typography variant="h5" className={classes.myName}><span>Ty Thanh Doan</span></Typography>
+            <Typography variant="body1" className={classes.myName}><span>Ty Thanh Doan</span></Typography>
           </ButtonBase>
           <ButtonBase focusRipple className={classes.navBtns}>
-            <Typography variant="h5" className={classes.myWork}><span>My work</span></Typography>
+            <Typography variant="body1" className={classes.myWork}><span>My work</span></Typography>
           </ButtonBase>
           <ButtonBase focusRipple className={classes.navBtns}>
-            <Typography variant="h5" className={classes.mySkills}><span>My skills</span></Typography>
+            <Typography variant="body1" className={classes.mySkills}><span>My skills</span></Typography>
           </ButtonBase>
-          <ButtonBase focusRipple className={classes.navBtns} style={{marginRight: '10vw'}}>
-            <Typography variant="h5" className={classes.aboutMe}><span>About Me</span></Typography>
+          <ButtonBase focusRipple className={classes.navBtns} style={{marginRight: '4vw'}}>
+            <Typography variant="body1" className={classes.aboutMe}><span>About me</span></Typography>
           </ButtonBase>
         </Box>
-      </Fade>
-      <Fade in={true} timeout={2000}>
+      {/* </Fade>
+      <Fade in={true} timeout={1000}> */}
         <Box className={classes.navBarIcons}>
             <IconButton>
               <LinkedIn />
@@ -38,7 +38,7 @@ const NavBar = () => {
               <GitHub />
             </IconButton>
         </Box>
-      </Fade>
+      {/* </Fade> */}
     </Box>
   )
 }

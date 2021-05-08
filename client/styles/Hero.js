@@ -1,9 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+const heroHeight = 750;
+const topOffset = 50;
 
 export default makeStyles((theme) => ({
   heroBox: {
-    height: 845,
+    height: heroHeight,
     width: '68%',
     backgroundColor: '#5B5B5B',
     display: 'flex',
@@ -12,7 +14,7 @@ export default makeStyles((theme) => ({
     position: 'relative',
   },
   whiteBox: {
-    height: 845,
+    height: heroHeight,
     width: '32%',
     backgroundColor: 'white',
     display: 'flex',
@@ -25,26 +27,109 @@ export default makeStyles((theme) => ({
     backgroundColor: 'rgba(0, 0, 0, 0)',
     position: 'absolute',
     width: 'auto',
-    fontWeight: 500,
-    marginRight: 525
+    marginRight: 340,
+  },
+  seeWorkBtn: {
+    marginTop: 16,
+    color: '#00D3FF',
+    borderColor: '#00D3FF',
   },
   topCube: {
     position: 'absolute',
     backgroundColor: 'rgba(0, 0, 0, 0)',
-    top: 215,
+    top: 215 - topOffset,
     left: '67.89%',
     zIndex: 1,
+  },
+  topRightCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 270 - topOffset,
+    left: '67.86%',
+    zIndex: 2,
+  },
+  topLeftCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 270 - topOffset,
+    right: '31.86%',
+    zIndex: 2,
   },
   rightCube: {
     position: 'absolute',
     backgroundColor: 'rgba(0, 0, 0, 0)',
-    top: 400,
+    top: 400 - topOffset,
     left: '67.89%',
+    zIndex: 2,
   },
   leftCube: {
     position: 'absolute',
     backgroundColor: 'rgba(0, 0, 0, 0)',
-    top: 400,
-    right: '32%',
+    top: 400 - topOffset,
+    right: '31.86%',
+    zIndex: 2,
+  },
+  bottomRightCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 500 - topOffset,
+    left: '67.86%',
+    zIndex: 1,
+  },
+  bottomLeftCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 500 - topOffset,
+    right: '31.86%',
+    zIndex: 1,
+  },
+  bottomRightSmallCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 625 - topOffset,
+    left: '67.86%',
+    zIndex: 1,
+  },
+  bottomLeftSmallCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 625 - topOffset,
+    right: '31.86%',
+    zIndex: 1,
+  },
+  rightRightCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 460 - topOffset,
+    left: '67.89%',
+    zIndex: 3,
+  },
+  leftLeftCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 460 - topOffset,
+    right: '31.86%',
+    zIndex: 3,
+  },
+  leftLeftTopCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 345 - topOffset,
+    right: '31.86%',
+    zIndex: 1,
+  },
+  leftSmallTopCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 365 - topOffset,
+    right: '31.86%',
+    zIndex: 0,
+  },
+  leftSmallBottomCube: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    top: 550 - topOffset,
+    right: '31.86%',
+    zIndex: 4,
   },
 }));
