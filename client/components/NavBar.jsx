@@ -28,15 +28,15 @@ const NavBar = () => {
       {/* </Fade>
       <Fade in={true} timeout={1000}> */}
         <Box className={classes.navBarIcons}>
-            <IconButton>
-              <LinkedIn />
-            </IconButton>
-            <IconButton>
-              <Twitter />
-            </IconButton>
-            <IconButton>
-              <GitHub />
-            </IconButton>
+          <IconButton aria-label="Linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/ty-thanh-doan/')}>
+            <LinkedIn />
+          </IconButton>
+          <IconButton aria-label="twitter.com" onClick={() => window.open('https://twitter.com/DoanTdoan35')}>
+            <Twitter />
+          </IconButton>
+          <IconButton aria-label="github.com" onClick={() => window.open('https://github.com/tdoan35')}>
+            <GitHub />
+          </IconButton>
         </Box>
       {/* </Fade> */}
     </Box>

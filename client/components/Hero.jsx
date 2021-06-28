@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button, Fade, Grow, Slide, Typography } from '@material-ui/core';
 import Particles from 'react-particles-js';
+import Typed from 'react-typed';
 
 import useStyles from '../styles/Hero';
 
@@ -129,7 +130,19 @@ const Hero = () => {
             <Typography variant="h4">Hi,</Typography>
             <Typography variant="h4">I'm Ty,</Typography>
             <Typography variant="h4" gutterBottom>software engineer.</Typography>
-            <Typography variant="subtitle1" gutterBottom>Mechanical Engineer {'>'}</Typography>
+            <Typed
+              strings={[
+                "Former Mechanical Engineer",
+                "Co-creator of Examin",
+                "Full-Stack Engineer at Facebook"
+              ]}
+              typeSpeed={50}
+              backSpeed={48}
+              backDelay={1}
+              stop
+              smartBackspace
+            />
+            <Typography variant="subtitle1" gutterBottom>{'>'}</Typography>
             <Button variant="outlined" className={classes.seeWorkBtn}>See My Work</Button>
           </Box>
         </Box>
